@@ -1,0 +1,53 @@
+{
+  "projectName": "ppost16",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap4",
+  "frameworks": [
+    {
+      "name": "appConnect",
+      "type": "local"
+    },
+    {
+      "name": "moment_2",
+      "type": "local with locales"
+    },
+    {
+      "name": "jquery_slim_34",
+      "type": "local"
+    },
+    {
+      "name": "fontawesome_5",
+      "type": "local"
+    },
+    {
+      "name": "bootstrap4",
+      "type": "local"
+    }
+  ],
+  "hostingType": "heroku",
+  "projectServerModel": "node",
+  "herokuProjectID": "ppost16",
+  "webRootFolder": "/public",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "node",
+  "targets": [
+    {
+      "name": "Development",
+      "remoteURL": "http://localhost:3000/",
+      "targetType": "heroku",
+      "msSQLVersion": "2019-latest"
+    },
+    {
+      "targetType": "heroku",
+      "name": "Production",
+      "usage": "production",
+      "remoteURL": "https://ppost16.herokuapp.com/",
+      "msSQLVersion": "2019-latest"
+    }
+  ],
+  "activeTarget": "Production",
+  "projectType": "web",
+  "npmInstall": true
+}

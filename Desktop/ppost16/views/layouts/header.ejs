@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <script src="dmxAppConnect/dmxAppConnect.js"></script>
+  <base href="/">
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js" integrity="sha256-VrmtNHAdGzjNsUNtWYG55xxE9xDTz4gF63x/prKXKH0=" crossorigin="anonymous"></script>
+  <script src="dmxAppConnect/dmxBootstrap4Navigation/dmxBootstrap4Navigation.js" defer=""></script>
+  <script src="dmxAppConnect/dmxRouting/dmxRouting.js" defer=""></script>
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="bootstrap/4/css/bootstrap.min.css" />
+</head>
+
+<body id="header" is="dmx-app">
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><i class="fas fa-mail-bulk"></i>PigeonPost</a>
+          </nav>
+        </div>
+        <div class="offset-6 col-2 align-self-center">
+          <div class="btn-group" role="group" aria-label="Button Group">
+            <button id="btn2" class="btn text-center btn-primary align-self-center" dmx-on:click="">Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div is="dmx-view" id="content">
+    <%- await include(content, locals); %>
+  </div>
+
+  <script src="bootstrap/4/js/popper.min.js"></script>
+  <script src="bootstrap/4/js/bootstrap.min.js"></script>
+</body>
+
+</html>
